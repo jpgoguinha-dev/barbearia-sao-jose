@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  background-color: #111111;
+  border: 1px solid #c9a84c;
+  border-radius: 12px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 40px rgba(201, 168, 76, 0.15);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.logo-icon {
+  font-size: 42px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.logo h1 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.logo h1 span {
+  color: #c9a84c;
+}
+
+.logo p {
+  color: #888888;
+  font-size: 13px;
+  margin-top: 4px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  color: #c9a84c;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.input-group input {
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #c9a84c;
+}
+
+.input-group input::placeholder {
+  color: #444444;
+}
+
+.toggle-senha {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.btn-entrar {
+  width: 100%;
+  background: linear-gradient(135deg, #c9a84c, #a07830);
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: opacity 0.3s, transform 0.1s;
+}
+
+.btn-entrar:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-entrar:active {
+  transform: translateY(0);
+}
+
+.cadastro-link {
+  text-align: center;
+  color: #666666;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.cadastro-link a {
+  color: #c9a84c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cadastro-link a:hover {
+  text-decoration: underline;
+}
