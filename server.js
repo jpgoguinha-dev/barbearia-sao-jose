@@ -15,6 +15,9 @@ app.use(express.json());
 const authRoutes = require('./src/routes/authRoutes');
 const agendamentoRoutes = require('./src/routes/agendamentoRoutes');
 
+const adminRoutes = require('./src/routes/adminRoutes');
+app.use('/api/admin', adminRoutes);
+
 app.use('/api/auth', authRoutes);
 app.use('/api/agendamentos', agendamentoRoutes);
 
