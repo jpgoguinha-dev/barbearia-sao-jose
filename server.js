@@ -13,13 +13,16 @@ app.use(cors());
 app.use(express.json());
 
 const authRoutes = require('./src/routes/authRoutes');
+const agendamentoRoutes = require('./src/routes/agendamentoRoutes');
+
 app.use('/api/auth', authRoutes);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/api/agendamentos', agendamentoRoutes);
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;
