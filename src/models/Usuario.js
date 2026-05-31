@@ -19,6 +19,11 @@ const usuarioSchema = new mongoose.Schema({
     required: true,
     minlength: 6
   },
+  perfil: {
+    type: String,
+    enum: ['cliente', 'admin'],
+    default: 'cliente'
+  },
   criadoEm: {
     type: Date,
     default: Date.now
